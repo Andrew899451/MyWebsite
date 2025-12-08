@@ -1,0 +1,133 @@
+
+/* colours
+offwhite: #f4f2f3
+text: #2D3748 */
+
+
+body {
+    background-color: #f4f2f3;
+    color: #2D3748;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;    margin: 0;
+}
+
+header, main, .hero {
+    max-width: 1200px;
+    margin: auto;
+} 
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #2D3748;
+    padding: 7px;
+    font-family: "futura-pt", sans-serif;
+
+}
+nav a:hover {
+    color: rgb(124, 123, 123);  
+}
+
+.hero {
+    background-color: cadetblue;
+    /* .. here means "go out of the current folder, going up to main folder" */
+    background-image: url("../images/hero-background.png");
+    background-size: cover;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+
+}
+.hero-content {
+    background-color:  #2d3748d7;
+    color:#f4f2f3;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.hero-content h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 45px;
+    font-weight: 300;
+}
+
+.product {
+    display: flex;
+    /* margin here is 20px for top and bottom, 0 for left and right */
+    margin: 20px 0;
+}
+.product-details {
+    margin: 20px;
+}
+.product-description {
+    line-height: 1.5;
+    font-size: 16px;
+    max-width: 60ch;
+}
+.pricing {
+    /* margin: 15px 0; */
+}
+
+/* the unordered list inside the product specs div */
+.product-specs ul {
+    list-style: none;
+}
+.product-details li {
+    padding: 5px 0
+}
+
+.add-to-cart, .wishlist {
+    padding: 20px 25px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.add-to-cart {
+    background-color: #2D3748;
+    color: #f4f2f3;
+}
+
+/* Product Grid */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-rows: 250px 250px 250px; */
+    gap: 10px;
+}
+
+.grid-item {
+    border: solid red 1px;
+    /* height: 250px; */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.grid-item .content {
+    position: absolute;
+    color: white;
+    font-size: 22px;
+    padding: 25px 0 0 0;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.183));
+    /* background-color: rgba(228, 228, 228, 0.36);
+    backdrop-filter: blur(10px);*/
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
+}
+.pricing {
+    font-size: 30px;
+}
+.featured {
+    grid-column: span 2;
+    grid-row: span 2;
+}
