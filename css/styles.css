@@ -49,11 +49,14 @@ nav a:hover {
     padding: 20px;
     border-radius: 10px;
 }
-.hero-content h2 {
-    font-family: "Roboto", sans-serif;
+/* ==font 1(start) */
+
+.hero-content h2 {  
+	font-family: "Pixelify Sans", sans-serif;
     font-size: 45px;
-    font-weight: 300;
+    font-weight: 300; 
 }
+/* ==font 2(end) */
 
 .product {
     display: flex;
