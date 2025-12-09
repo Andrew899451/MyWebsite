@@ -45,7 +45,7 @@ nav a:hover {
 }
 .hero-content {
     background-color:  #2d3748d7;
-    color:#ff0000;
+    color:#f4f2f2;
     margin: 15px;
     padding: 20px;
     border-radius: 10px;
@@ -91,7 +91,7 @@ nav a:hover {
 }
 .add-to-cart {
     background-color: #2D3748;
-    color: #ff0000;
+    color: #f4f2f3;
 }
 
 /* Product Grid */
