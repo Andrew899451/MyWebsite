@@ -36,7 +36,7 @@ nav a:hover {
 .hero {
     background-color: cadetblue;
     /* .. here means "go out of the current folder, going up to main folder" */
-    background-image: url("../images/hero-background.jpg");
+    background-image: url("../images/hero-background.png");
     background-size: cover;
     min-height: 300px;
     display: flex;
@@ -44,8 +44,8 @@ nav a:hover {
 
 }
 .hero-content {
-    background-color:  #2d3748d7;
-    color:#f4f2f2;
+    background-color:  #a20000d7;
+    color:#00bb54;
     margin: 15px;
     padding: 20px;
     border-radius: 10px;
